@@ -57,18 +57,22 @@ public class TwoDRandomMovement : MonoBehaviour
     GameObject FindPlayerInRange()
     {
         //find object with player tag
-        Collider[] colliders = Physics.OverlapSphere(transform.position, playerDetectionRange);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y), playerDetectionRange);
 
-        foreach (Collider collider in colliders)
+        foreach (Collider2D collider in colliders)
         {
+            Debug.Log("Collider: " + collider.gameObject.name);
+
             if (collider.CompareTag(playerTag))
             {
                 //return player is in range
+                Debug.Log("player detected");
                 return collider.gameObject;
             }
         }
 
         //return player is not in range
+        Debug.Log("player not detected");
         return null;
     }
 }
