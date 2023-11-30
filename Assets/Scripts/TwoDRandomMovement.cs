@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class TwoDRandomMovement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class TwoDRandomMovement : MonoBehaviour
     public Transform centrePoint;
     public float playerDetectionRange;
     public string playerTag = "Player";
+    public string gameOverSceneName;
 
     void Start()
     {
@@ -39,6 +41,15 @@ public class TwoDRandomMovement : MonoBehaviour
             }
         }
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag(playerTag))
+        {
+            Debug.Log("Trigger Entered");
+            SceneManager.LoadScene(gameOverSceneName);
+        }
+    }
 
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
@@ -61,18 +72,18 @@ public class TwoDRandomMovement : MonoBehaviour
 
         foreach (Collider2D collider in colliders)
         {
-            Debug.Log("Collider: " + collider.gameObject.name);
+            //Debug.Log("Collider: " + collider.gameObject.name);
 
             if (collider.CompareTag(playerTag))
             {
                 //return player is in range
-                Debug.Log("player detected");
+                //Debug.Log("player detected");
                 return collider.gameObject;
             }
         }
 
         //return player is not in range
-        Debug.Log("player not detected");
+        //Debug.Log("player not detected");
         return null;
     }
 }
