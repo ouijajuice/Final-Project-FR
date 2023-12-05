@@ -991,14 +991,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344518684}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.68, y: 0.35, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071071, w: 0.70710653}
+  m_LocalPosition: {x: -0.11, y: 11.79, z: 0}
   m_LocalScale: {x: 0.037452824, y: 0.037452824, z: 0.037452824}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1387641657}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &344518686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1554,7 +1554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.69, y: 0.15, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3519,17 +3519,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 585320629745501453, guid: 66a5f43e6d9733748a89a51afd8a7dda, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1798810057557261054, guid: 66a5f43e6d9733748a89a51afd8a7dda, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1798810057557261054, guid: 66a5f43e6d9733748a89a51afd8a7dda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7446651
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1798810057557261054, guid: 66a5f43e6d9733748a89a51afd8a7dda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.111284256
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1798810057557261054, guid: 66a5f43e6d9733748a89a51afd8a7dda, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5173,6 +5177,10 @@ PrefabInstance:
     - target: {fileID: 7018286938259101258, guid: aee41b48814cb594dbf45a45a83b238f, type: 3}
       propertyPath: m_Name
       value: win screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018286938259101258, guid: aee41b48814cb594dbf45a45a83b238f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7018286938259101262, guid: aee41b48814cb594dbf45a45a83b238f, type: 3}
       propertyPath: m_Pivot.x
