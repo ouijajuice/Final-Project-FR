@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rd: {fileID: 0}
-  speed: 10
+  speed: 7
   playerTag: Player
   animator: {fileID: 0}
 --- !u!50 &54928702307952756
