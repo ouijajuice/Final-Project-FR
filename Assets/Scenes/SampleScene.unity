@@ -1627,6 +1627,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2948538982102457306, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.16037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948538982102457306, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.16037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948538982102457306, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948538982102457308, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+      propertyPath: gameOverSceneName
+      value: GameOverScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948538982102457308, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+      propertyPath: playerDetectionRange
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2948538982102457309, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
       propertyPath: m_Name
       value: Monster
@@ -1920,6 +1940,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7456345056431292411, guid: 89bdbe2fe8b0ead48a8f2ef7c46f5d2a, type: 3}
   m_PrefabInstance: {fileID: 58359007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &662675348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2948538982102457309, guid: cc356d070a3e97542bb5be69228d98f2, type: 3}
+  m_PrefabInstance: {fileID: 551181803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &662675353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662675348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21133333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &683587559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7456345056431292411, guid: 89bdbe2fe8b0ead48a8f2ef7c46f5d2a, type: 3}
