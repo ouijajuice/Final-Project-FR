@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public string playerTag = "Player";
 
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
         {
             xMov = Input.GetAxisRaw("Horizontal");
             yMov = Input.GetAxisRaw("Vertical");
+
+            animator.SetFloat("Horizontal", xMov);
+            animator.SetFloat("Vertical", yMov);
 
             rd.velocity = new Vector2(xMov * speed, yMov * speed);
 
