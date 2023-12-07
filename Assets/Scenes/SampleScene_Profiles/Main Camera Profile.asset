@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5745017395136834470
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 1
+    value: {fileID: 2800000, guid: b61968596aa982b42a58c7e0da82738b, type: 3}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 0.633
+  fastMode:
+    overrideState: 1
+    value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,6 +42,7 @@ MonoBehaviour:
   - {fileID: 4151313035158179761}
   - {fileID: 4286558421982231813}
   - {fileID: 6777494860672308124}
+  - {fileID: -5745017395136834470}
 --- !u!114 &4151313035158179761
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -43,7 +70,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.518
+    value: 0.578
   smoothness:
     overrideState: 1
     value: 1
@@ -78,35 +105,35 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 7.23
+    value: 7.62
   threshold:
     overrideState: 1
-    value: 0.83
+    value: 0.8
   softKnee:
     overrideState: 1
     value: 0.5
   clamp:
-    overrideState: 1
-    value: 65472
+    overrideState: 0
+    value: 65455.43
   diffusion:
     overrideState: 1
     value: 7
   anamorphicRatio:
     overrideState: 1
-    value: 0
+    value: -0.27
   color:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 1, g: 0.61386144, b: 0, a: 1}
   fastMode:
     overrideState: 1
     value: 0
   dirtTexture:
-    overrideState: 1
-    value: {fileID: 0}
+    overrideState: 0
+    value: {fileID: 2800000, guid: b61968596aa982b42a58c7e0da82738b, type: 3}
     defaultState: 1
   dirtIntensity:
-    overrideState: 1
-    value: 0
+    overrideState: 0
+    value: 0.4
 --- !u!114 &6777494860672308124
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -125,13 +152,13 @@ MonoBehaviour:
     value: 1
   colored:
     overrideState: 1
-    value: 1
+    value: 0
   intensity:
     overrideState: 1
-    value: 0.648
+    value: 0.598
   size:
     overrideState: 1
-    value: 1
+    value: 1.07
   lumContrib:
     overrideState: 1
-    value: 0.8
+    value: 0.548
