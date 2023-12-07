@@ -19,12 +19,24 @@ public class PlayerMovement : MonoBehaviour
         rd = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
+    public static bool IsGamePaused
+    {
+        get
+        {
+            return Time.timeScale == 0;
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {
         float xMov;
         float yMov;
-        if (this.CompareTag(playerTag))
+
+
+
+        if (this.CompareTag(playerTag) && !IsGamePaused)
         {
             xMov = Input.GetAxisRaw("Horizontal");
             yMov = Input.GetAxisRaw("Vertical");
@@ -43,5 +55,9 @@ public class PlayerMovement : MonoBehaviour
             
 
         }
+
+
     }
+
+
 }

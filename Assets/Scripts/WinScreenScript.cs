@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class WinScreenScript : MonoBehaviour
 {
 
-
-    public GameObject winScreenObject;
+    public string winScreenSceneName;
+    
     public string playerTag = "Player";
 
     // Start is called before the first frame update
@@ -28,11 +28,21 @@ public class WinScreenScript : MonoBehaviour
         {
 
             //win screen is shown 
-            winScreenObject.SetActive(true);
+            SceneManager.LoadScene(winScreenSceneName);
             //timescale is set to 0, pausing game
             Time.timeScale = 0f;
 
 
+        }
+    }
+
+
+
+    public static bool IsGamePaused
+    {
+        get
+        {
+            return Time.timeScale == 0;
         }
     }
 
